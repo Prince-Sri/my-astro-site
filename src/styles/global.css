@@ -2,68 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ----------------------------------- */
+/* 1. Theme Variables (Astro/Cosmic) */
+/* ----------------------------------- */
 :root {
-  --color-primary: #4a90e2; /* Deep blue */
-  --color-secondary: #d4af37; /* Gold */
-  --color-accent: #ffffff; /* Marble white */
-  --color-background: #1a1a1a; /* Dark background */
-  --font-heading: 'Cinzel', serif; /* Mythological serif font */
-  --font-body: 'Lora', serif; /* Elegant serif font */
-
-  --color-primary-background: #191970; /* Deep Royal Blue */
-  --color-accent-1: #FFD700; /* Light Gold */
-  --color-text: #ADD8E6; /* Pale Cyan */
-  --color-card-background: #1c1c3c; /* Slightly lighter background for cards */
+  --color-primary-background: #191970; /* Deep Royal Blue (Night Sky) */
+  --color-accent-1: #FFD700; /* Light Gold (Stars/Highlights) */
+  --color-text: #ADD8E6; /* Pale Cyan/Silver (Body Text) */
+  --color-card-background: #1c1c3c; /* Slightly lighter background for cards/panels */
   --color-border: #2a2a5a; /* Subtle border color */
+  --color-link-hover: #FFFACD; /* Pale yellow on hover */
+
+  /* Font Variables (Must be loaded via HTML or @import) */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Lora', serif;
 }
 
+/* ----------------------------------- */
+/* 2. Global Styles */
+/* ----------------------------------- */
 body {
   font-family: var(--font-body);
   background-color: var(--color-primary-background);
   color: var(--color-text);
-  line-height: 1.6;
+  line-height: 1.7; /* Slightly higher for better dark-theme readability */
+  font-size: 1.05rem; /* Slightly larger text */
 }
 
+/* ----------------------------------- */
+/* 3. Typography */
+/* ----------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-accent-1);
+  font-weight: 700; /* Ensure headings are prominent */
 }
 
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------- */
+/* 4. Links */
+/* ----------------------------------- */
 a {
   color: var(--color-accent-1);
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 a:hover {
+  color: var(--color-link-hover); /* Brighter gold on hover */
   text-decoration: underline;
 }
 
+/* ----------------------------------- */
+/* 5. Layout Elements */
+/* ----------------------------------- */
 header {
   background-color: var(--color-card-background);
-  border-bottom: 1px solid var(--color-border);
+  /* Use subtle shadow instead of harsh border for cosmic feel */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
   padding: 1rem;
   text-align: center;
 }
 
 footer {
-  background: var(--color-primary);
-  color: var(--color-accent);
+  /* Use the card background for consistent dark depth */
+  background: var(--color-card-background); 
+  color: var(--color-text);
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid var(--color-border);
 }
 
+/* ----------------------------------- */
+/* 6. Components */
+/* ----------------------------------- */
 .card {
   background-color: var(--color-card-background);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Slightly rounder for elegance */
+  padding: 2rem;
+  /* Enhanced box shadow for depth/glow effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 
+              0 0 15px rgba(25, 25, 112, 0.4); /* Subtle blue glow */
   color: var(--color-text);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6), 
+                0 0 20px rgba(25, 25, 112, 0.6);
 }
 
 .card h3 {
   color: var(--color-accent-1);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .card p {
