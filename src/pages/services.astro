@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Services - SpiritGuide" description="Explore our healing and astrology services. Professional spiritual guidance, energy healing, and personalized astrological readings.">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-600 to-indigo-600 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        Our Services
+      </h1>
+      <p class="text-xl text-purple-100 max-w-3xl mx-auto">
+        Discover our comprehensive range of spiritual services designed to guide you on your journey toward healing, self-discovery, and personal growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Healing Services -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+          <div class="bg-gradient-to-r from-pink-500 to-rose-500 h-48 flex items-center justify-center">
+            <span class="text-6xl">✨</span>
+          </div>
+          <div class="p-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Energy Healing</h2>
+            <p class="text-gray-600 mb-6">
+              Experience transformative healing sessions that restore balance and harmony to your mind, body, and spirit. 
+              Our certified healers use various techniques to help you release blockages and align with your highest potential.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start">
+                <span class="text-green-500 mr-3 mt-1">✓</span>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Reiki Healing</h3>
+                  <p class="text-sm text-gray-600">Channel universal life force energy to promote healing and relaxation</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span class="text-green-500 mr-3 mt-1">✓</span>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Chakra Balancing</h3>
+                  <p class="text-sm text-gray-600">Align and balance your energy centers for optimal well-being</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span class="text-green-500 mr-3 mt-1">✓</span>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Crystal Therapy</h3>
+                  <p class="text-sm text-gray-600">Use the power of crystals to enhance healing and spiritual growth</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$120</span>
+                <span class="text-gray-600">per session</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-1">60-minute personalized session</p>
+            </div>
+            
+            <a href="/contact" class="w-full bg-pink-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-pink-600 transition-colors text-center block">
+              Book Healing Session
+            </a>
+          </div>
+        </div>
+
+        <!-- Astrology Services -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+          <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-48 flex items-center justify-center">
+            <span class="text-6xl">🌙</span>
+          </div>
+          <div class="p-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Astrology Services</h2>
+            <p class="text-gray-600 mb-6">
+              Unlock the secrets of the cosmos with our comprehensive astrology services. 
+              Get personalized insights into your personality, relationships, and life path through detailed birth chart analysis.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start">
+                <span class="text-green-500 mr-3 mt-1">✓</span>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Birth Chart Reading</h3>
+                  <p class="text-sm text-gray-600">Complete analysis of your natal chart and planetary positions</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span class="text-green-500 mr-3 mt-1">✓</span>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Relationship Compatibility</h3>
+                  <p class="text-sm text-gray-600">Explore romantic and platonic relationship dynamics</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span class="text-green-500 mr-3 mt-1">✓</span>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Transit Forecasts</h3>
+                  <p class="text-sm text-gray-600">Monthly and yearly predictions based on planetary movements</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$150</span>
+                <span class="text-gray-600">per reading</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-1">Detailed 90-minute consultation</p>
+            </div>
+            
+            <a href="/contact" class="w-full bg-indigo-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-600 transition-colors text-center block">
+              Book Astrology Reading
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Services -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Additional Services
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          We also offer specialized services to support your spiritual journey.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Meditation Classes -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🧘</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Meditation Classes</h3>
+          <p class="text-gray-600 text-center mb-4">
+            Learn various meditation techniques to calm your mind and connect with your inner self.
+          </p>
+          <div class="text-center">
+            <span class="text-lg font-bold text-blue-600">$25/class</span>
+          </div>
+        </div>
+        
+        <!-- Tarot Readings -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🔮</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Tarot Readings</h3>
+          <p class="text-gray-600 text-center mb-4">
+            Gain insights into your current situation and future possibilities through tarot card guidance.
+          </p>
+          <div class="text-center">
+            <span class="text-lg font-bold text-purple-600">$80/reading</span>
+          </div>
+        </div>
+        
+        <!-- Spiritual Counseling -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">💚</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Spiritual Counseling</h3>
+          <p class="text-gray-600 text-center mb-4">
+            One-on-one guidance to help you navigate life's challenges with spiritual wisdom.
+          </p>
+          <div class="text-center">
+            <span class="text-lg font-bold text-green-600">$100/session</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ready to Begin Your Spiritual Journey?
+      </h2>
+      <p class="text-xl text-purple-100 mb-8">
+        Book a consultation today and take the first step toward healing, self-discovery, and spiritual growth.
+      </p>
+      <a href="/contact" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
+        Schedule Your Session
+      </a>
+    </div>
+  </section>
+</BaseLayout>

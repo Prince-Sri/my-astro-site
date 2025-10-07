@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4a90e2; /* Deep blue */
+  --color-secondary: #d4af37; /* Gold */
+  --color-accent: #ffffff; /* Marble white */
+  --color-background: #1a1a1a; /* Dark background */
+  --font-heading: 'Cinzel', serif; /* Mythological serif font */
+  --font-body: 'Lora', serif; /* Elegant serif font */
+
+  --color-primary-background: #191970; /* Deep Royal Blue */
+  --color-accent-1: #FFD700; /* Light Gold */
+  --color-text: #ADD8E6; /* Pale Cyan */
+  --color-card-background: #1c1c3c; /* Slightly lighter background for cards */
+  --color-border: #2a2a5a; /* Subtle border color */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-primary-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-accent-1);
+}
+
+a {
+  color: var(--color-accent-1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--color-card-background);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background: var(--color-primary);
+  color: var(--color-accent);
+  text-align: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+}
+
+.card h3 {
+  color: var(--color-accent-1);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+}

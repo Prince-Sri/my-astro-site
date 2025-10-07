@@ -1,11 +1,27 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="SpiritGuide - Healing & Astrology">
+  <section class="text-center py-20">
+    <h2 class="text-5xl font-bold text-yellow-300 mb-6">Find Peace ✨ Unlock the Stars 🌌</h2>
+    <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+      Your journey to healing and cosmic alignment begins here.  
+      Explore ancient wisdom, modern astrology, and holistic healing.  
+    </p>
+    <a href="/services" class="mt-8 inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+      Explore Our Services
+    </a>
+  </section>
+
+  <section class="grid md:grid-cols-2 gap-10 mt-16">
+    <div class="p-6 bg-purple-800/40 rounded-2xl shadow-lg hover:shadow-yellow-500/40 transition">
+      <h3 class="text-2xl font-bold text-yellow-300 mb-4">🌿 Healing</h3>
+      <p>Reiki, chakra balancing, meditation guidance, and holistic therapies for inner peace and energy alignment.</p>
+    </div>
+    <div class="p-6 bg-indigo-800/40 rounded-2xl shadow-lg hover:shadow-yellow-500/40 transition">
+      <h3 class="text-2xl font-bold text-yellow-300 mb-4">🔮 Astrology</h3>
+      <p>Personalized astrological insights, horoscope readings, and guidance to help you navigate life with clarity.</p>
+    </div>
+  </section>
+</BaseLayout>
